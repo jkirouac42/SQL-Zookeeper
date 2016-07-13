@@ -1,0 +1,40 @@
+SELECT yr, subject, winner
+  FROM nobel
+ WHERE yr = 1950
+ SELECT winner
+  FROM nobel
+ WHERE yr = 1962
+   AND subject = 'Literature'
+   Select yr, subject
+from nobel
+where winner = 'Albert Einstein'
+SELECT winner
+FROM nobel
+WHERE subject = 'Peace'
+AND yr >= 2000
+SELECT yr,subject,winner
+FROM nobel
+WHERE subject ='Literature'
+And yr >= 1980 and yr <= 1989
+SELECT yr, subject, winner 
+FROM nobel
+ WHERE winner = 'Theodore Roosevelt' or winner = 'Woodrow Wilson'
+or winner = 'Jimmy Carter
+SELECT winner
+FROM nobel
+WHERE winner like 'John%'
+SELECT yr, subject, winner
+FROM nobel
+ yr = 1980 AND subject = 'Physics'or yr = 1984
+and subject = 'Chemistry'                  Some of these are BS. They want them in a certain order when they are called out 
+                                            in a different one.
+                                            
+SELECT yr,subject,winner
+FROM nobel
+WHERE yr = 1980 and
+subject != 'Chemistry' and subject != 'Medicine'  here is another one. Only asked for winner. Incorrect unless yr,subject,winner
+
+SELECT yr, subject, winner
+FROM nobel 
+WHERE yr < 1910 and subject = 'Medicine'
+or subject = 'Literature' and yr >=2004           Guess you can't use 2 ands in a statement
